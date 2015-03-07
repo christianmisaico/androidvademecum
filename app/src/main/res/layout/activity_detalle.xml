@@ -1,0 +1,119 @@
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:text="NOMBRE COMERCIAL"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#F09000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<ScrollView
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:layout_width="fill_parent" >
+
+
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="NOMBRE COMERCIAL"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="PRESENTACION"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/presentacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="SUSTANCIAS"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sustancias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="INGREDIENTE ACTIVO"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/laboratorios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="CETEGORIAS"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/usos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="CULTIVOS"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cultivos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/fichatecnica"
+            android:layout_marginTop="20dp"
+            style="@style/btnStyleArsenic"
+            android:text="VER FICHA TECNICA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

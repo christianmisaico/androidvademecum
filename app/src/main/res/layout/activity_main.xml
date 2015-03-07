@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="70dp"
+        android:src="@drawable/insuagro" />
+    <TextView
+        android:id="@+id/mensajebusqueda"
+        android:text="Buscador de Productos :"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/insuagro" />
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/registrarusuario"
+        android:layout_gravity="center"
+        style="@style/btnStyleArsenic"
+        android:text="REGISTRESE PRIMERO"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/buscador"
+            style="@style/buscador"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:background="@drawable/buscadorstyle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/buscarboton"
+            android:src="@drawable/busqeuda"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            style="@style/btnStyleArsenic"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+            <TabWidget
+                android:layout_marginBottom="5dp"
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        <FrameLayout
+            android:layout_marginTop="48dp"
+            android:background="@drawable/resultados"
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="0dp">
+
+
+            <ListView
+                android:id="@+id/tabnombres"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+            <ListView
+                android:id="@+id/tabsustancias"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+            <ListView
+                android:id="@+id/tablaboratorios"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+            <ListView
+                android:id="@+id/tabusos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+
+        </FrameLayout>
+    </TabHost>
+</LinearLayout>

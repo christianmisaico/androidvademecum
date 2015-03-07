@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fertilizantes.com.projectfert.LoginActivity">
+    <TextView
+        android:id="@+id/titulo"
+        android:text="VADEMECUM"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#0c580e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:padding="20dp"
+        android:orientation="vertical"
+>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:src="@drawable/insuagro" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/circleProgreso"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:id="@+id/crearcuenta"
+        android:layout_marginTop="20dp"
+        android:text="Crear una cuenta"
+        android:textSize="12dp"
+        style="@style/btnStyleArsenic"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/texto"
+        android:text="Ya tengo una cuenta"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/logincorreo"
+        style="@style/buscador"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/buscadorstyle"
+        android:maxLength="50"
+        android:textSize="15dp"
+        android:hint="Usuario"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:id="@+id/logincontraseña"
+        style="@style/buscador"
+        android:inputType="textWebPassword"
+        android:maxLength="50"
+        android:textSize="15dp"
+        android:hint="Contraseña"
+        android:background="@drawable/buscadorstyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/validar"
+            android:layout_marginTop="15dp"
+            android:text="Validar"
+            android:textSize="12dp"
+            style="@style/btnStyleArsenic"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/olvido"
+            android:layout_marginTop="5dp"
+            android:text="¿Olvido su contraseña?"
+            android:textSize="12dp"
+            style="@style/btnStyleArsenic"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="0dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/vademecunboton"
+            android:text="Buscar"
+            android:textSize="13dp"
+            android:visibility="gone"
+            android:drawableTop="@drawable/magnifier13"
+            android:layout_alignParentLeft="true"
+            style="@style/btnStylePrinicpal"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+        <Button
+            android:id="@+id/sugerenciaboton"
+            android:drawableTop="@drawable/clipboard45"
+            android:text="Sugerencia"
+            android:textSize="13dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            style="@style/btnStylePrinicpal"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+        <Button
+            android:id="@+id/ayudaboton"
+            android:drawableTop="@drawable/idea14"
+            android:text="Ayuda"
+            android:textSize="13dp"
+            android:visibility="gone"
+            style="@style/btnStylePrinicpal"
+            android:layout_alignParentRight="true"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+    </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/mensajefacebook"
+                android:text="Siguenos en :   "
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/facebook"
+                android:src="@drawable/facebook"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Insuagro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="estadocivil">
+        <item>Soltero(a)</item>
+        <item>Casado(a)</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string-array name="numerodehijos">
+        <item>Soltero(a)</item>
+        <item>Casado(a)</item>
+        <item>Otros</item>
+    </string-array>
+
+    <string name="ayuda">
+        Insuagro presenta una aplicación gratuita para dispositivos móviles con la información de vademecun, sin duda una gran herramienta agronómica para todos sus usuarios.
+        \n\n
+            Esta aplicación facilita la búsqueda por:\n\n
+            * Nombre comercial del producto\n
+            * Ingrediente activo\n
+            * Laboratorio/importador\n
+            * Categoría\n
+            \nAdemas se podrá visualizar fichas técnicas.
+            \n\nEsta aplicación va dirigida a todo usuario que desee obtener información sobre productos para uso agrícola.\nLas decisiones agronómicas u otros son de exclusiva responsabilidad del usuario. Se ha puesto el máximo cuidado en la verificación de los datos y su transcripción. Quedando bajo responsabilidad del usuario el uso de los mismos.
+
+    </string>
+</resources>

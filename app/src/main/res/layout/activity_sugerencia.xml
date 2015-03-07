@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="#fff"
+    android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_height="100dp"
+            android:src="@drawable/insuagro" />
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progresosugerencia"
+        android:layout_gravity="center_horizontal" />
+
+
+        <EditText
+            android:id="@+id/textsug"
+            style="@style/buscador"
+            android:lines="8"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:minLines="6"
+            android:maxLines="10"
+            android:padding="10dp"
+            android:background="@drawable/buscadorstyle"
+            android:maxLength="250"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <Button
+            android:id="@+id/enviarsug"
+            android:layout_marginTop="10dp"
+            android:text="Enviar Sugerencia"
+            android:textSize="12dp"
+            style="@style/btnStyleArsenic"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>

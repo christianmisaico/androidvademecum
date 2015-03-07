@@ -1,0 +1,128 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:layout_width="fill_parent" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/insuagro" />
+
+        <TextView
+            android:text="*NOMBRES Y APELLIDOS"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/nombres"
+            style="@style/buscador"
+            android:inputType="text"
+            android:background="@drawable/buscadorstyle"
+            android:maxLength="50"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="*DNI"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/dni"
+            style="@style/buscador"
+            android:inputType="number"
+            android:maxLength="8"
+            android:background="@drawable/buscadorstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="*EMAIL"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/correo"
+            style="@style/buscador"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/buscadorstyle"
+            android:maxLength="50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="*REPITA EMAIL"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/emailcorporativo"
+            style="@style/buscador"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:background="@drawable/buscadorstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="*TELEFONO"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/telefonopersonal"
+            style="@style/buscador"
+            android:inputType="number"
+            android:maxLength="15"
+            android:background="@drawable/buscadorstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="*FECHA DE NACIMIENTO"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fechanacimiento"
+            style="@style/buscador"
+            android:background="@drawable/buscadorstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/condicion"
+            android:layout_marginTop="20dp"
+            android:text="Acepto que esta información sea usada con fines publicitarios. Y sera usada de manera privada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/enviar"
+            android:layout_marginTop="30dp"
+            style="@style/btnStyleArsenic"
+            android:text="ENVIAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
